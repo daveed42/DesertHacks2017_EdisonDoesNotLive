@@ -1,4 +1,4 @@
 export class TheInsult {
-  id: number;
+  //id: number;
   theInsult: string;
 }

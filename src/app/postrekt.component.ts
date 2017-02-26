@@ -2,12 +2,9 @@ import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 //import { InsultService } from './insult.service';
-import { TheInsult } from './theinsult';
+//import { TheInsult } from './theinsult';
 
-const INSULTS: TheInsult[] = [
-  {id: 1, theInsult: 'Your mother was a hamster!'},
-  {id: 2, theInsult: 'Your father smelled of elderberries!'}
-]
+var insults:string[]=['Your mother was a hamster!', 'Your father smelled of elderberries!'];
 
 @Component({
   selector: 'post-rekt',
@@ -16,7 +13,7 @@ const INSULTS: TheInsult[] = [
     <p></p>
       <h1>NERD</h1>
       <p></p>
-      <h2>nerd</h2>
+      <h2>nErD</h2>
       <p></p>
       <h3>nErD</h3>
     <p></p>
@@ -26,16 +23,21 @@ const INSULTS: TheInsult[] = [
   `
 })
 export class PostRekt /*implements OnInit*/ {
-  unInsults=INSULTS;
+  //unInsults=INSULTS;
 
-//  insultNumber: number = (1);
+  insultNumber: number = 0;
 
-  //newInsult(submit:number) {
+  newInsult() {
+    this.insultNumber=this.insultNumber+1;
+
     //this.unInsults[1].id=submit;
     //this.unInsults.id;
-  //}
+  }
 
   /*
+  { 'Your mother was a hamster!'},
+  { 'Your father smelled of elderberries!'}
+
   <input type="text" value="submit"><br>
 
     <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />

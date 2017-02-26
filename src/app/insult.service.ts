@@ -18,3 +18,7 @@ export class InsultService {
 
 }
 */
+
+export class InsultService {
+  
+}
