@@ -1,18 +1,18 @@
-  import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-  @Component({
-    //moduleId: module.id,
-    selector: 'pre-rekt',
-    template: `
-    <h1>Git ur insults here!</h1>
-    <h2>Click to get insulted lel.</h2>
-    `
+@Component({
+  //moduleId: module.id,
+  selector: 'pre-rekt',
+  template: `
+  <h1>Git ur insults here!</h1>
+  <h2>Click to get insulted lel.</h2>
+  `
 
-  })
-  export class PreRekt {
+})
+export class PreRekt {
 
-  //  insults: Insult[] = [];
+//  insults: Insult[] = [];
 
-  //  constructor(private insultService: InsultService) { }
+//  constructor(private insultService: InsultService) { }
 
-  }
+}

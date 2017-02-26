@@ -9,9 +9,9 @@ import { Component } from '@angular/core';
     <h1>{{title}}</h1>
     <router-outlet></router-outlet>
     <nav>
-      <a routerLink="/prerekt" routerLinkActive="active">Get Rekt?</a>
+      <a routerLink="/pre-rekt" routerLinkActive="active">Get Rekt?</a>
       <p></p>
-      <a routerLink="/postrekt" routerLinkActive="active">Get Rekt.</a>
+      <a routerLink="/post-rekt" routerLinkActive="active">Get Rekt.</a>
     </nav>
 
     <!--<h1>Git ur insults here!</h1>
