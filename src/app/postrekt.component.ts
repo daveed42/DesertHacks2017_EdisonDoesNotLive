@@ -13,10 +13,13 @@ const INSULTS: TheInsult[] = [
   selector: 'post-rekt',
   template: `
     <h1>scrub</h1>
-    <p class="unInsults">
-      <span>{{unInsult.theInsult}}</span>
-    </p>
-    <input></input>
+    <p></p>
+      <h1>NERD</h1>
+      <p></p>
+      <h2>nerd</h2>
+      <p></p>
+      <h3>nErD</h3>
+    <p></p>
     <button (click)="newInsult()">Get Insulted Again</button>
     <p></p>
     <h2>You have been insulted</h2>
@@ -25,13 +28,16 @@ const INSULTS: TheInsult[] = [
 export class PostRekt /*implements OnInit*/ {
   unInsults=INSULTS;
 
-  insultNumber: number = (1);
+//  insultNumber: number = (1);
 
-  newInsult() {
-    this.unInsults.id;
-  }
+  //newInsult(submit:number) {
+    //this.unInsults[1].id=submit;
+    //this.unInsults.id;
+  //}
 
   /*
+  <input type="text" value="submit"><br>
+
     <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
 [unInsults]="id === insultNumber"
 
