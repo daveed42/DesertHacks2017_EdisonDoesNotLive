@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
+import { TheInsult } from './theinsult';
 //import { InsultList } from './insultList';
+
 
 
 @Component({
