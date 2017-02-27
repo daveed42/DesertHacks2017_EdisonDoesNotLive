@@ -26,6 +26,11 @@ var insults:string[]=['Your mother was a hamster!',
 
 ];
 
+/*var audio = new Audio();
+audio.src = "./app/hamster.mp3";
+audio.load();
+audio.play();*/
+
 @Component({
   selector: 'post-rekt',
   template: `
@@ -37,19 +42,23 @@ var insults:string[]=['Your mother was a hamster!',
       <p></p>
       <h3>nErD</h3>
     <p></p>
-    <button (click)="newInsult()">Get Insulted Again</button>
+    <audio id="hamster" src="hamster.mp3"></audio>
+    <button (click)="newInsult()" >Get Insulted Again</button>
     <p></p>
     <h2>You have been insulted</h2>
   `
 })
 export class PostRekt /*implements OnInit*/ {
   //unInsults=INSULTS;
+
+
   insultNumber: number = 0;
   dumbInsult: string=insults[this.insultNumber];
 
   newInsult() {
     this.insultNumber=this.insultNumber+1;
     this.dumbInsult=insults[this.insultNumber]
+    //document.getElementById('hamster').play();
 
     //this.unInsults[1].id=submit;
     //this.unInsults.id;
